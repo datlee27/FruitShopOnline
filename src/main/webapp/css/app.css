@@ -1,0 +1,165 @@
+/*body{
+     background-image: url("../image/fruitshop.jpg");;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#wrapper{
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#formlogin{
+max-width:400px ;
+background-color: rgba(16, 151, 80, 1);
+flex-grow: 1;
+padding: 30px 30px 40px;
+box-shadow: 0px 0px 17px 2px rgba(102, 255, 102, 1);
+}
+.formheading{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px; ;
+}
+.formgroup{
+    border-bottom: 1px solid #fff;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.forminput{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: #f5f5f5;
+    flex-grow: 1;
+    padding-left: 15px;
+    padding-bottom: 16px
+}
+#eye i{
+padding-right: 0;
+cursor: pointer;
+
+}
+.formgroup i{
+    color: #fff;
+    font-size: 14px;
+    
+}
+.forminput::placeholder{
+    color:hsl(0, 13%, 90%) ;
+}
+
+.formsubmit{
+   
+    background: transparent;
+    border: 1px solid #f5f5f5;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    transition: 0.25s ease-in-out;
+    margin-top: 30px;
+   
+}
+.formsubmit:hover{
+    border:1px solid blue;
+    background-color: aqua;
+    color: #f5f5f5;
+    cursor: pointer;
+}
+.labeltext{
+    color :#ffffff
+}
+.fa-key{
+    padding-right: 4px ; 
+}
+
+.fa-regular{
+    padding-right: 4px; 
+}*/
+/*body {
+            background-image: url("../image/fruitshop.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }*/
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 998;
+            display: none;
+        }
+        #loginModal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(16, 151, 80, 1);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 17px 2px rgba(102, 255, 102, 1);
+            z-index: 999;
+            width: 400px;
+        }
+        .formheading {
+            font-size: 25px;
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .formgroup {
+            border-bottom: 1px solid #fff;
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+        }
+        .forminput {
+            background: transparent;
+            border: 0;
+            outline: 0;
+            color: #f5f5f5;
+            flex-grow: 1;
+            padding-left: 15px;
+            padding-bottom: 10px;
+        }
+        .forminput::placeholder {
+            color: hsl(0, 13%, 90%);
+        }
+        .formsubmit, .cancelbtn {
+            background: transparent;
+            border: 1px solid #f5f5f5;
+            width: 48%;
+            text-transform: uppercase;
+            padding: 8px;
+            margin-top: 20px;
+            color: #fff;
+        }
+        .formsubmit:hover, .cancelbtn:hover {
+            border: 1px solid blue;
+            background-color: aqua;
+            color: #000;
+            cursor: pointer;
+        }
+        #eye i {
+            cursor: pointer;
+        }
+        .formgroup i {
+            color: #fff;
+            font-size: 14px;
+            padding-right: 5px;
+        }
+        #loginStatus {
+            color: red;
+            font-weight: bold;
+            text-align: center;
+        }
+        #loginButtons {
+            display: flex;
+            justify-content: space-between;
+        }
+        

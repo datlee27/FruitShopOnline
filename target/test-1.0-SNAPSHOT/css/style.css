@@ -1,0 +1,71 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 16 thg 5, 2025, 11:18:55
+    Author     : mac
+*/
+body{
+    color:#006666;
+ align-content: center;
+ justify-content: center; 
+background-image: url("../image/bgfruit1.jpg");
+background-color: #33ffff;
+}
+img {
+    justify-content: center;
+    align-content: center;
+    display: block ;
+}
+.card-img-top{
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+.btn:hover{
+    background: green; 
+}
+
+.modal {
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background-image: url("../image/bglogin.jpg");
+    background-color: #99ccff;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    position: relative;
+}
+.close-btn {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.card-body{
+    background-color: #ccffff;
+    
+}
+.formProduct{
+    background-color: #f5f5f5
+}
+.tbody{
+     background-color: #f5f5f5
+}
+.formAccount{
+     background-color: #f5f5f5
+}
+
+
+
+
+
