@@ -5,30 +5,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Product List</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
-
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/main.css">
 </head>
 <body>
-    <c:if test="${empty listallP}">
-        <p>Không có product nào.</p>
-    </c:if>
+<section class="products">
+    <div class="container">
+        <div class="section-header">
+            <div class="badge" style="margin: 0 auto 1rem;">Our Products</div>
+            <h2>Featured Fruits</h2>
+            <p>Handpicked from the finest farms. Quality you can taste, freshness you can see.</p>
+        </div>
 
-    <div class="container mt-4">
-        <div class="row">
+        <c:if test="${empty listallP}">
+            <p>No products found.</p>
+        </c:if>
+
+        <div class="products-grid">
             <c:forEach var="a" items="${listallP}">
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="image/${a.img}" class="card-img-top" alt="${a.nameProduct}">
-                        <div class="card-body">
-                            <h5 class="card-title">${a.nameProduct}</h5>
-                            <p class="card-text">${a.description}</p>
-                            <p class="card-text">Price: $${a.price}</p>
-                            <a href="cart?aid=${a.id}" class="btn btn-primary">Add to Cart</a>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="image/${a.img}" alt="${a.nameProduct}">
+                        <button class="wishlist-btn" aria-label="Add to wishlist">❤️</button>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">${a.nameProduct}</h3>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.5)</span>
                         </div>
+                        <div class="price-group">
+                            <span class="price">$${a.price}</span>
+                            <span class="unit">/ kg</span>
+                        </div>
+                        <a href="cart?aid=${a.id}" class="add-to-cart">
+                            🛒 Add to Cart
+                        </a>
                     </div>
                 </div>
             </c:forEach>
         </div>
     </div>
+</section>
 </body>
 </html>

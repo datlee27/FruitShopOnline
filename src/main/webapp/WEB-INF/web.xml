@@ -45,15 +45,6 @@
         <servlet-name>Fruit</servlet-name>
         <url-pattern>/fruit</url-pattern>
     </servlet-mapping>
-    <!-- LoginServlet -->
-    <servlet>
-        <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>controller.LoginServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>LoginServlet</servlet-name>
-        <url-pattern>/LoginServlet</url-pattern>
-    </servlet-mapping>
     <!-- ProductManager -->
     <servlet>
         <servlet-name>ProductManager</servlet-name>
