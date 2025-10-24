@@ -25,9 +25,9 @@ FruitShop_Online là một ứng dụng web bán trái cây trực tuyến. Hệ
 ---
 
 ## 🛠 Công nghệ sử dụng
-- **Frontend**: HTML, CSS, JavaScript, Bootstrap  
+- **Frontend**: HTML, CSS,Tailwind JavaScript, Bootstrap,Figma
 - **Backend**: Java Servlet/JSP (MVC)  
-- **CSDL**: MySQL / SQL Server  
+- **CSDL**: MySQL 
 - **Quản lý dự án**: Git, GitHub  
 
 ---
