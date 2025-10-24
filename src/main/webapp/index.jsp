@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="DAO.DAO, entity.Account, entity.Product, entity.Category, java.util.List" %>
 <%@ page errorPage="errorPage.jsp" %>
 
@@ -28,32 +29,32 @@
                 <div class="category-card orange">
                     <div class="category-icon">🍊</div>
                     <h3>Citrus</h3>
-                    <p>25 items</p>
+<%--                    <p>25 items</p>--%>
                 </div>
                 <div class="category-card red">
                     <div class="category-icon">🍓</div>
                     <h3>Berries</h3>
-                    <p>18 items</p>
+<%--                    <p>18 items</p>--%>
                 </div>
                 <div class="category-card yellow">
                     <div class="category-icon">🥭</div>
                     <h3>Tropical</h3>
-                    <p>32 items</p>
+<%--                    <p>32 items</p>--%>
                 </div>
                 <div class="category-card pink">
                     <div class="category-icon">🍑</div>
                     <h3>Stone Fruits</h3>
-                    <p>15 items</p>
+<%--                    <p>15 items</p>--%>
                 </div>
                 <div class="category-card green">
                     <div class="category-icon">🍉</div>
                     <h3>Melons</h3>
-                    <p>12 items</p>
+<%--                    <p>12 items</p>--%>
                 </div>
                 <div class="category-card red-light">
                     <div class="category-icon">🍎</div>
                     <h3>Apples & Pears</h3>
-                    <p>28 items</p>
+<%--                    <p>28 items</p>--%>
                 </div>
             </div>
         </div>
@@ -71,7 +72,7 @@
                     <p>On all orders over $50</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🛡️</div>
+                    <div class="feature-icon">✨</div>
                     <h3>Quality Guarantee</h3>
                     <p>100% fresh or money back</p>
                 </div>
@@ -93,7 +94,7 @@
     <section class="newsletter">
         <div class="container">
             <div class="newsletter-content">
-                <div class="newsletter-icon">📧</div>
+
                 <h2>Subscribe to Our Newsletter</h2>
                 <p>Get exclusive deals, recipes, and the latest updates on new fruit arrivals!</p>
                 

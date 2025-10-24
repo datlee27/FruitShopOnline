@@ -38,8 +38,8 @@ public class LoadEditProduct extends HttpServlet {
                Product p = dao.getProductByID(id); 
                request.setAttribute("detail", p);
       List<Category> categoryList1 = dao.getAllCategory() ;
-        request.setAttribute("listCc",categoryList1); 
-        request.getRequestDispatcher("/managerproduct.jsp").forward(request, response);
+        request.setAttribute("listCc", categoryList1);
+        request.getRequestDispatcher("EditProduct.jsp").forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

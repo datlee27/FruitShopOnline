@@ -15,16 +15,18 @@ public class Product {
     private double price ; 
     private String title ; 
     private String description; 
+    private int cateID;
 
     
 
-    public Product(int id, String nameProduct, String img, double price, String title, String description) {
+    public Product(int id, String nameProduct, String img, double price, String title, String description, int cateID) {
         this.id = id;
         this.nameProduct = nameProduct;
         this.img = img;
         this.price = price;
         this.title = title;
         this.description = description;
+        this.cateID = cateID;
     }
 
     public Product() {
@@ -78,9 +80,17 @@ public class Product {
         this.description = description;
     }
 
+    public int getCateID() {
+        return cateID;
+    }
+
+    public void setCateID(int cateID) {
+        this.cateID = cateID;
+    }
+
     @Override
     public String toString() {
-        return "Product{" + "id=" + id + ", nameProduct=" + nameProduct + ", img=" + img + ", price=" + price + ", title=" + title + ", description=" + description + '}';
+        return "Product{" + "id=" + id + ", nameProduct=" + nameProduct + ", img=" + img + ", price=" + price + ", title=" + title + ", description=" + description + ", cateID=" + cateID + '}';
     }
 
    

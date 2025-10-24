@@ -4,8 +4,17 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Product List</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/main.css">
+    <title>Product List</title><link rel="stylesheet" href="${pageContext.request.contextPath}/css/main.css">
+    <style>
+        .card-text {
+            white-space: nowrap; /* Ngăn không cho văn bản xuống dòng */
+            overflow: hidden; /* Ẩn phần văn bản bị thừa */
+            text-overflow: ellipsis; /* Hiển thị dấu "..." cho phần bị ẩn */
+            height: 1.5em; /* Giới hạn chiều cao tương đương một dòng */
+            line-height: 1.5em; /* Căn giữa văn bản theo chiều dọc */
+            margin-bottom: 1rem; /* Thêm khoảng cách dưới mô tả */
+        }
+    </style>
 </head>
 <body>
 <section class="products">
@@ -33,6 +42,9 @@
                             <span class="stars">★★★★★</span>
                             <span class="rating-count">(4.5)</span>
                         </div>
+                      
+                        <p class="card-text">${a.description}</p>
+
                         <div class="price-group">
                             <span class="price">$${a.price}</span>
                             <span class="unit">/ kg</span>

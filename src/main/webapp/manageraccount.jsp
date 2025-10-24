@@ -85,7 +85,7 @@
                 <td>${a.isSell}</td>
                 <td>${a.isAdmin}</td>
                 <td>
-               <a href="loadproduct?aid=${a.id}" class="btn btn-warning btn-sm"  >Edit</a>
+
                    <a href="delete?aid=${a.id}" class="btn btn-danger btn-sm"
              onclick="return confirm('Are you sure you want to delete this account (ID: ${a.id})?');">Delete</a>
                 </td>

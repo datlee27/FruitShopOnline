@@ -65,7 +65,8 @@ public class DAO {
                     rs.getString("img"),
                     rs.getDouble("price"),
                     rs.getString("title"),
-                    rs.getString("description")
+                    rs.getString("description"),
+                    rs.getInt("cateID")
                 )) ;
                     
             }
@@ -186,7 +187,8 @@ public class DAO {
                     rs.getString("img"),
                     rs.getDouble("price"),
                     rs.getString("title"),
-                    rs.getString("description")
+                    rs.getString("description"),
+                    rs.getInt("cateID")
                 )) ;
         }
     } catch (Exception e) {
@@ -209,7 +211,8 @@ public class DAO {
                     rs.getString("img"),
                     rs.getDouble("price"),
                     rs.getString("title"),
-                    rs.getString("description")
+                    rs.getString("description"),
+                    rs.getInt("cateID")
                 ); 
             }
         } catch (Exception e) {

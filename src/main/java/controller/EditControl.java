@@ -35,21 +35,9 @@ public class EditControl extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-           String pid =request.getParameter("id"); 
-           String pname = request.getParameter("nameProduct"); 
-           String pimg =request.getParameter("img"); 
-           String  pprice =request.getParameter("price");       
-           String  ptitle =request.getParameter("title");
-           String pdescription  =request.getParameter("description"); 
-           String  pcategory =request.getParameter("category");
-       
-           
-            
-            DAO dao = new DAO(); 
-            dao.editProduct(pname, pimg, pprice, ptitle, pdescription, pcategory, pid);
-            response.sendRedirect("product");
-            
-
+        // This method is no longer needed as we separate GET and POST logic.
+        // Redirect to prevent direct access issues.
+        response.sendRedirect("product");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -64,7 +52,9 @@ public class EditControl extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        // A GET request to this URL is not a valid action.
+        // Redirect to the product list to avoid blank pages or errors.
+        response.sendRedirect("product");
     }
 
     /**
@@ -78,7 +68,21 @@ public class EditControl extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        // Set character encoding to handle special characters correctly
+        request.setCharacterEncoding("UTF-8");
+
+        // Get all parameters from the edit form
+        String pid = request.getParameter("id");
+        String pname = request.getParameter("nameProduct");
+        String pimg = request.getParameter("img");
+        String pprice = request.getParameter("price");
+        String ptitle = request.getParameter("title");
+        String pdescription = request.getParameter("description");
+        String pcategory = request.getParameter("category");
+
+        DAO dao = new DAO();
+        dao.editProduct(pname, pimg, pprice, ptitle, pdescription, pcategory, pid);
+        response.sendRedirect("product"); // Redirect to the product list after update
     }
 
     /**
